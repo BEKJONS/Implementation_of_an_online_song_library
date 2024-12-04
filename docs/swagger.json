@@ -1,0 +1,408 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "API for managing an online music library",
+        "title": "Music Library API",
+        "contact": {},
+        "version": "1.0"
+    },
+    "paths": {
+        "/songs": {
+            "get": {
+                "description": "Get all songs with optional filters",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Song"
+                ],
+                "summary": "List all songs",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Group name filter",
+                        "name": "groups",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Song title filter",
+                        "name": "title",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Release date filter",
+                        "name": "release_date",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Text filter",
+                        "name": "text",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Page number",
+                        "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Number of items per page",
+                        "name": "limit",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/entity.Song"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/entity.Error"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "description": "Create a new song with details like title, group, release date, etc.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Song"
+                ],
+                "summary": "Create a new song",
+                "parameters": [
+                    {
+                        "description": "Create song",
+                        "name": "CreateSong",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/entity.Song1"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/entity.Song"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/entity.Error"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/entity.Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/songs/{id}": {
+            "get": {
+                "description": "Fetch song details by its ID",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Song"
+                ],
+                "summary": "Get song details by ID",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Song ID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/entity.Song"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/entity.Error"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "description": "Update details of an existing song",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Song"
+                ],
+                "summary": "Update song data",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Song ID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "description": "Updated song data",
+                        "name": "UpdateSong",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/entity.UpdateSong1"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/entity.Song"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/entity.Error"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "Delete a song by ID",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Song"
+                ],
+                "summary": "Delete a song",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Song ID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/entity.Message"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/entity.Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/songs/{id}/paginate": {
+            "get": {
+                "description": "Paginate the lyrics text for a specific song by verse.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Song"
+                ],
+                "summary": "Paginate text",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Song ID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Number of verses per page",
+                        "name": "limit",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Offset for pagination",
+                        "name": "offset",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Paginated lyrics text",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid request parameters",
+                        "schema": {
+                            "$ref": "#/definitions/entity.Error"
+                        }
+                    },
+                    "404": {
+                        "description": "Song not found",
+                        "schema": {
+                            "$ref": "#/definitions/entity.Error"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal server error",
+                        "schema": {
+                            "$ref": "#/definitions/entity.Error"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "entity.Error": {
+            "type": "object",
+            "properties": {
+                "error": {
+                    "type": "string"
+                }
+            }
+        },
+        "entity.Message": {
+            "type": "object",
+            "properties": {
+                "message": {
+                    "type": "string"
+                }
+            }
+        },
+        "entity.Song": {
+            "type": "object",
+            "properties": {
+                "created_at": {
+                    "description": "Время создания записи",
+                    "type": "string"
+                },
+                "groups": {
+                    "description": "Название группы",
+                    "type": "string"
+                },
+                "id": {
+                    "description": "Уникальный идентификатор",
+                    "type": "string"
+                },
+                "link": {
+                    "description": "Ссылка на дополнительные данные",
+                    "type": "string"
+                },
+                "release_date": {
+                    "description": "Дата выпуска",
+                    "type": "string"
+                },
+                "song": {
+                    "description": "Название песни",
+                    "type": "string"
+                },
+                "text": {
+                    "description": "Текст песни",
+                    "type": "string"
+                },
+                "updated_at": {
+                    "description": "Время последнего обновления",
+                    "type": "string"
+                }
+            }
+        },
+        "entity.Song1": {
+            "type": "object",
+            "properties": {
+                "groups": {
+                    "description": "Название группы",
+                    "type": "string"
+                },
+                "link": {
+                    "description": "Ссылка на дополнительные данные",
+                    "type": "string"
+                },
+                "release_date": {
+                    "description": "Дата выпуска",
+                    "type": "string"
+                },
+                "song": {
+                    "description": "Название песни",
+                    "type": "string"
+                },
+                "text": {
+                    "description": "Текст песни",
+                    "type": "string"
+                }
+            }
+        },
+        "entity.UpdateSong1": {
+            "type": "object",
+            "properties": {
+                "groups": {
+                    "type": "string"
+                },
+                "link": {
+                    "type": "string"
+                },
+                "release_date": {
+                    "type": "string"
+                },
+                "song": {
+                    "type": "string"
+                },
+                "text": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

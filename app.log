@@ -1,0 +1,100 @@
+{"time":"2024-12-03T10:52:11.634697207+05:00","level":"ERROR","msg":"Error in getting from body","error":"parsing time \"string\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"string\" as \"2006\""}
+{"time":"2024-12-03T10:54:05.965547828+05:00","level":"ERROR","msg":"Error in getting from body","error":"parsing time \"2024-11-25\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"\" as \"T\""}
+{"time":"2024-12-03T10:55:22.817670008+05:00","level":"INFO","msg":"started creating song","title":"Dream in Colors"}
+{"time":"2024-12-03T10:55:22.817740181+05:00","level":"ERROR","msg":"error creating song","error":"release date must be in the future"}
+{"time":"2024-12-03T10:55:22.817760111+05:00","level":"INFO","msg":"ended creating song","title":"Dream in Colors"}
+{"time":"2024-12-03T10:55:22.817768343+05:00","level":"ERROR","msg":"Error in creating song","error":"release date must be in the future"}
+{"time":"2024-12-03T10:55:31.880594904+05:00","level":"INFO","msg":"started creating song","title":"Dream in Colors"}
+{"time":"2024-12-03T10:55:31.900771188+05:00","level":"INFO","msg":"ended creating song","title":"Dream in Colors"}
+{"time":"2024-12-03T10:56:22.306190251+05:00","level":"INFO","msg":"started creating song","title":"Dream"}
+{"time":"2024-12-03T10:56:22.313382199+05:00","level":"INFO","msg":"ended creating song","title":"Dream"}
+{"time":"2024-12-03T10:56:34.087350092+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T10:56:34.097788975+05:00","level":"ERROR","msg":"error listing songs","error":"failed to list songs: missing destination name song in *[]entity.Song"}
+{"time":"2024-12-03T10:56:34.09782326+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T10:56:34.09782935+05:00","level":"ERROR","msg":"Error in listing songs","error":"failed to list songs: missing destination name song in *[]entity.Song"}
+{"time":"2024-12-03T10:59:19.163369696+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T10:59:19.165025805+05:00","level":"ERROR","msg":"error listing songs","error":"failed to list songs: missing destination name song in *[]entity.Song"}
+{"time":"2024-12-03T10:59:19.165050258+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T10:59:19.165056188+05:00","level":"ERROR","msg":"Error in listing songs","error":"failed to list songs: missing destination name song in *[]entity.Song"}
+{"time":"2024-12-03T10:59:40.008321873+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T10:59:40.010109937+05:00","level":"ERROR","msg":"error listing songs","error":"failed to list songs: missing destination name song in *[]entity.Song"}
+{"time":"2024-12-03T10:59:40.01013972+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T10:59:40.010148144+05:00","level":"ERROR","msg":"Error in listing songs","error":"failed to list songs: missing destination name song in *[]entity.Song"}
+{"time":"2024-12-03T10:59:48.722976437+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T10:59:48.723802192+05:00","level":"ERROR","msg":"error listing songs","error":"failed to list songs: missing destination name song in *[]entity.Song"}
+{"time":"2024-12-03T10:59:48.723843464+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T10:59:48.723857098+05:00","level":"ERROR","msg":"Error in listing songs","error":"failed to list songs: missing destination name song in *[]entity.Song"}
+{"time":"2024-12-03T11:00:41.331255614+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T11:00:41.33274652+05:00","level":"ERROR","msg":"error listing songs","error":"failed to list songs: missing destination name release_date in *[]entity.Song"}
+{"time":"2024-12-03T11:00:41.332769811+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T11:00:41.332777445+05:00","level":"ERROR","msg":"Error in listing songs","error":"failed to list songs: missing destination name release_date in *[]entity.Song"}
+{"time":"2024-12-03T11:02:23.755513048+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T11:02:23.757286793+05:00","level":"ERROR","msg":"error listing songs","error":"failed to list songs: missing destination name created_at in *[]entity.Song"}
+{"time":"2024-12-03T11:02:23.757331433+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T11:02:23.757339728+05:00","level":"ERROR","msg":"Error in listing songs","error":"failed to list songs: missing destination name created_at in *[]entity.Song"}
+{"time":"2024-12-03T11:05:46.789356855+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T11:05:46.790938528+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T11:06:02.1458482+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T11:06:02.1544177+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T11:06:05.599417351+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T11:06:05.600136587+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T11:06:11.701687161+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T11:06:11.702277283+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T11:06:17.456865948+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T11:06:17.457585388+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T11:06:28.09740149+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T11:06:28.098190784+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T11:07:41.155996903+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T11:07:41.157864733+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T11:07:46.220726216+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T11:07:46.221583913+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T11:07:51.044055689+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T11:07:51.044774944+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T11:08:07.156637037+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T11:08:07.157403939+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T11:08:22.463103355+05:00","level":"INFO","msg":"started getting song","id":"3d73e37d-69af-428a-bc2b-f7d10e77bb72"}
+{"time":"2024-12-03T11:08:22.464162299+05:00","level":"INFO","msg":"ended getting song","id":"3d73e37d-69af-428a-bc2b-f7d10e77bb72"}
+{"time":"2024-12-03T11:09:09.112778826+05:00","level":"INFO","msg":"started updating song","id":"string"}
+{"time":"2024-12-03T11:09:09.119966535+05:00","level":"ERROR","msg":"error updating song","error":"failed to update song: pq: invalid input syntax for type date: \"string\""}
+{"time":"2024-12-03T11:09:09.120017094+05:00","level":"INFO","msg":"ended updating song","id":"string"}
+{"time":"2024-12-03T11:09:09.120024308+05:00","level":"ERROR","msg":"Error in updating song","error":"failed to update song: pq: invalid input syntax for type date: \"string\""}
+{"time":"2024-12-03T11:10:55.351654636+05:00","level":"INFO","msg":"started updating song","id":"string"}
+{"time":"2024-12-03T11:10:55.35292756+05:00","level":"ERROR","msg":"error updating song","error":"failed to update song: pq: invalid input syntax for type date: \"string\""}
+{"time":"2024-12-03T11:10:55.352966394+05:00","level":"INFO","msg":"ended updating song","id":"string"}
+{"time":"2024-12-03T11:10:55.352984369+05:00","level":"ERROR","msg":"Error in updating song","error":"failed to update song: pq: invalid input syntax for type date: \"string\""}
+{"time":"2024-12-03T11:12:15.212766451+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T11:12:15.214289398+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-03T11:12:26.031621451+05:00","level":"INFO","msg":"started updating song","id":"3d73e37d-69af-428a-bc2b-f7d10e77bb72"}
+{"time":"2024-12-03T11:12:26.038432712+05:00","level":"INFO","msg":"ended updating song","id":"3d73e37d-69af-428a-bc2b-f7d10e77bb72"}
+{"time":"2024-12-03T11:12:39.829462112+05:00","level":"INFO","msg":"started deleting song","id":"3d73e37d-69af-428a-bc2b-f7d10e77bb72"}
+{"time":"2024-12-03T11:12:39.831874263+05:00","level":"INFO","msg":"ended deleting song","id":"3d73e37d-69af-428a-bc2b-f7d10e77bb72"}
+{"time":"2024-12-03T13:46:19.70802161+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-03T13:46:19.714995634+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-04T18:29:19.583214222+05:00","level":"INFO","msg":"started listing songs"}
+{"time":"2024-12-04T18:29:19.588922214+05:00","level":"INFO","msg":"ended listing songs"}
+{"time":"2024-12-04T18:30:17.800039611+05:00","level":"INFO","msg":"started creating song","title":"Dream"}
+{"time":"2024-12-04T18:30:17.807235212+05:00","level":"INFO","msg":"ended creating song","title":"Dream"}
+{"time":"2024-12-04T18:32:19.19819854+05:00","level":"INFO","msg":"started getting song","id":"paginate"}
+{"time":"2024-12-04T18:32:19.205736597+05:00","level":"ERROR","msg":"error getting song","error":"failed to get song: pq: invalid input syntax for type uuid: \"paginate\""}
+{"time":"2024-12-04T18:32:19.205773396+05:00","level":"INFO","msg":"ended getting song","id":"paginate"}
+{"time":"2024-12-04T18:32:19.205785369+05:00","level":"ERROR","msg":"Error in getting song","error":"failed to get song: pq: invalid input syntax for type uuid: \"paginate\""}
+{"time":"2024-12-04T18:32:42.776818507+05:00","level":"INFO","msg":"started getting song","id":"paginate"}
+{"time":"2024-12-04T18:32:42.777312454+05:00","level":"ERROR","msg":"error getting song","error":"failed to get song: pq: invalid input syntax for type uuid: \"paginate\""}
+{"time":"2024-12-04T18:32:42.777335157+05:00","level":"INFO","msg":"ended getting song","id":"paginate"}
+{"time":"2024-12-04T18:32:42.777344014+05:00","level":"ERROR","msg":"Error in getting song","error":"failed to get song: pq: invalid input syntax for type uuid: \"paginate\""}
+{"time":"2024-12-04T18:34:24.306211475+05:00","level":"INFO","msg":"started getting song","id":"paginate"}
+{"time":"2024-12-04T18:34:24.307283926+05:00","level":"ERROR","msg":"error getting song","error":"failed to get song: pq: invalid input syntax for type uuid: \"paginate\""}
+{"time":"2024-12-04T18:34:24.307329874+05:00","level":"INFO","msg":"ended getting song","id":"paginate"}
+{"time":"2024-12-04T18:34:24.307342317+05:00","level":"ERROR","msg":"Error in getting song","error":"failed to get song: pq: invalid input syntax for type uuid: \"paginate\""}
+{"time":"2024-12-04T18:34:25.362610858+05:00","level":"INFO","msg":"started getting song","id":"paginate"}
+{"time":"2024-12-04T18:34:25.36315579+05:00","level":"ERROR","msg":"error getting song","error":"failed to get song: pq: invalid input syntax for type uuid: \"paginate\""}
+{"time":"2024-12-04T18:34:25.363184484+05:00","level":"INFO","msg":"ended getting song","id":"paginate"}
+{"time":"2024-12-04T18:34:25.363196387+05:00","level":"ERROR","msg":"Error in getting song","error":"failed to get song: pq: invalid input syntax for type uuid: \"paginate\""}
+{"time":"2024-12-04T18:34:41.152954321+05:00","level":"INFO","msg":"started getting song","id":"6e421e4e-ae53-497d-ae85-e7007b850ee3"}
+{"time":"2024-12-04T18:34:41.15388846+05:00","level":"INFO","msg":"ended getting song","id":"6e421e4e-ae53-497d-ae85-e7007b850ee3"}
+{"time":"2024-12-04T18:34:41.153914239+05:00","level":"INFO","msg":"Paginating text","limit":2,"offset":0}
+{"time":"2024-12-04T18:34:41.15392522+05:00","level":"INFO","msg":"Paginated text successfully ended"}
+{"time":"2024-12-04T18:35:29.833686617+05:00","level":"INFO","msg":"started getting song","id":"6e421e4e-ae53-497d-ae85-e7007b850ee3"}
+{"time":"2024-12-04T18:35:29.834423983+05:00","level":"INFO","msg":"ended getting song","id":"6e421e4e-ae53-497d-ae85-e7007b850ee3"}
+{"time":"2024-12-04T18:35:29.834457967+05:00","level":"INFO","msg":"Paginating text","limit":2,"offset":0}
+{"time":"2024-12-04T18:35:29.834475931+05:00","level":"INFO","msg":"Paginated text successfully ended"}
